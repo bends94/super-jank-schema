@@ -903,13 +903,20 @@
         "applicationPermissions":{
           "type": "array",
           "description":"jankity jank jank",
-          "maxLength": 100
+          "maxItems": 100,
+          "items": {
+            "enum": [
+              "Channel.Create.Group",
+              "Channel.Delete.Group",
+              "ChannelMessage.Read.Group"
+             ]
+           }
         }
       },
       "required": [
         "id"
       ],
-      "additionalProperties": false
+      "additionalProperties": true
     },
     "graphConnector": {
       "type": "object",

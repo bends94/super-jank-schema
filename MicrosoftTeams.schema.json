@@ -891,10 +891,6 @@
       "type": "object",
       "description": "Specify your AAD App ID and Graph information to help users seamlessly sign into your AAD app.",
       "properties": {
-        "id": {
-          "$ref": "#/definitions/guid",
-          "description": "AAD application id of the app. This id must be a GUID."
-        },
         "resource": {
           "type": "string",
           "description": "Resource url of app for acquiring auth token for SSO.",
